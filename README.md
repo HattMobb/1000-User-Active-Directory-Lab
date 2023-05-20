@@ -77,6 +77,18 @@ Add the adderess of the DC INTERNAL NIC as the default gateway ( it has both rou
 Installing Active Directory on the server allows it to also act as a DNS Server so add the DC address as the DNS server when prompted.
 ![Screenshot 2023-05-20 152740](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/9ce16049-197e-4cd8-8181-842318641a4f)
 
-
-
 Any connected clients will now have internet access!
+
+
+To create a fake userbase the 1_CREATE_USERS powershell script must be run. In order to run the script, the action must first be permited - can be done from within console like so:
+
+![Screenshot 2023-05-20 154224](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/2fa02c97-e5da-42ff-9daf-fd995db5f473)
+
+Running the script will now produce 1000 user accounts for the domain.
+
+![Screenshot 2023-05-20 155752](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/66d651f9-581e-46ba-93dc-eea533fdc20d)
+
+
+To try it out, spin up a new VM using the Windows 10 ISO and test the internet connection, network settings etc to see how the client is provided addressing and access - you can log in with any of the fake accounts that were created by the script.
+
+

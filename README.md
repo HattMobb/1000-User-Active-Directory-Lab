@@ -51,3 +51,19 @@ Create the domain name
 
 ![Screenshot 2023-05-20 143938](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/3e7232d5-1ecc-442f-bb23-70ab44ab3844)
 
+For improved organistion, create a personal admin account within an OU in 'Users and Computers' - 
+
+![Screenshot 2023-05-20 150518](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/9b8d603d-4652-432c-ad43-2d4c703d3d9a)
+
+Don't forget to add the account to the admin group within the account properties 
+
+![Screenshot 2023-05-20 150944](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/04663860-8a11-406c-a10e-e1b41e3e85a2)
+
+Logging into your personal admin account, Network Address Translation and Remote Access can be installed to allow any clients on the network to connect to the internet via the DC.
+RAS (ENSURE ROUTING IS CHECKING WHLILE GOING THROUGH OPTIONS MENU:
+
+![Screenshot 2023-05-20 151329](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/52d21b03-f42a-4a26-aa07-e21fd1e75b31)
+
+Once installed, go to Tools - Routing and Remote Access - DC - Configure and check NAT to enable.
+
+![Screenshot 2023-05-20 151730](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/ae38f4cd-1963-4113-99ee-02cad8dec0f2)

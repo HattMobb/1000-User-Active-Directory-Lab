@@ -9,7 +9,8 @@
 
 The diagram below represents the network and how the various components are linked: 
 
-IMAGE
+![Screenshot 2023-05-20 143607](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/427fc629-9fba-4b76-a0c0-1623c813625a)
+
 
 
 ### **A couple of things to note:**

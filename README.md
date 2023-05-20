@@ -36,3 +36,7 @@ IMAGE
 
 ### **Network Adress Translation on the DC allows every internal client to connect to the Internet**
 
+---
+## Setting up the domain
+- Go to 'Add roles and features' and select 'Active Directory Domain Services' and install.
+- ![Screenshot 2023-05-20 142530](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/09a0c955-5bac-4be6-9236-7101e3b61765)

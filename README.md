@@ -38,7 +38,7 @@ The diagram below represents the network and how the various components are link
 ### **Network Adress Translation on the DC allows every internal client to connect to the Internet**
 
 ---
-## Setting up the domain
+## Setting up the domain + networking features
 Go to 'Add roles and features' and select 'Active Directory Domain Services' and install.
 
 ![Screenshot 2023-05-20 142530](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/09a0c955-5bac-4be6-9236-7101e3b61765)
@@ -64,6 +64,19 @@ RAS (ENSURE ROUTING IS CHECKING WHLILE GOING THROUGH OPTIONS MENU:
 
 ![Screenshot 2023-05-20 151329](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/52d21b03-f42a-4a26-aa07-e21fd1e75b31)
 
-Once installed, go to Tools - Routing and Remote Access - DC - Configure and check NAT to enable.
+Once installed, go to Tools - Routing and Remote Access - DC - Configure and check NAT to enable (make sure to tick your INTERNET FACING NIC when prompted for the adapter to use for Internet access).
 
 ![Screenshot 2023-05-20 151730](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/ae38f4cd-1963-4113-99ee-02cad8dec0f2)
+
+Finally, to serve clients usable IP address', add DCHP to the DC and configure the scope(address range) that the server can use.
+
+![Screenshot 2023-05-20 152438](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/5d47a798-2313-4da3-ba3d-bc4bce53cc1e)
+
+As noted above, this scope will allow the server to issue adresses in the range 172.16.0.100 - 172.16.0.200
+Add the adderess of the DC INTERNAL NIC as the default gateway ( it has both routing and NAT configured)
+Installing Active Directory on the server allows it to also act as a DNS Server so add the DC address as the DNS server when prompted.
+![Screenshot 2023-05-20 152740](https://github.com/HattMobb/1000-User-Active-Directory-Lab/assets/134090089/9ce16049-197e-4cd8-8181-842318641a4f)
+
+
+
+Any connected clients will now have internet access!
